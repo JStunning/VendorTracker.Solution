@@ -1,0 +1,17 @@
+@using VendorTracker.Models;
+@{
+  Layout = "_Layout";
+}
+
+<h3>Here are all the Orders this Vendor has.</h3>
+
+<ol>
+@foreach (Order order in @Model["orders"])
+{
+  <li><a href='/vendors/@Model["vendor"].Id/orders/order.Id'>@order.Name</a></li>
+}
+</ol>
+
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new Order</a></p>
+<p><a href='/vendors'>Return to the Vendor List</a></p>
+<p><a href='/'>Return to Home Page</a></p>
