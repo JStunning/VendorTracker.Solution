@@ -30,7 +30,7 @@ namespace VendorTracker.Models
       return _instances;
     }
 
-    public static Vendor Find(int searchId)
+    public static Vendor FindVendor(int searchId)
     {
       return _instances[searchId - 1];
     }

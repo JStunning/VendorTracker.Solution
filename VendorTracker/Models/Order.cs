@@ -13,11 +13,11 @@ namespace VendorTracker.Models
     public int Id { get; }
     private static List<Order> _instances = new List<Order> { };
 
-    public Order(string title, string description, string date)
+    public Order(string title, string description)
     {
       Title = title;
       Description = description;
-      Date = date;
+      Date = "Today";
       Price = 0;
       _instances.Add(this);
       Id = _instances.Count;
@@ -33,7 +33,7 @@ namespace VendorTracker.Models
         _instances.Clear();
     }
 
-    public static Order Find(int searchId)
+    public static Order FindOrder(int searchId)
     {
         return _instances[searchId - 1];
     }
