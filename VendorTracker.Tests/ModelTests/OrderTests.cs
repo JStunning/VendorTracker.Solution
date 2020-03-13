@@ -22,12 +22,14 @@ namespace VendorTracker.Tests
       string resultDescription = newOrder.Description;
       string resultDate = newOrder.Date;
       int resultPrice = newOrder.Price;
+      int resultId = newOrder.Id;
 
       Assert.AreEqual(typeof(Order), newOrder.GetType());
       Assert.AreEqual(resultTitle, "title");
       Assert.AreEqual(resultDescription, "description");
       Assert.AreEqual(resultDate, "date");
       Assert.AreEqual(resultPrice, 0);
+      Assert.AreEqual(resultId, 1);
     }
 
     [TestMethod]
