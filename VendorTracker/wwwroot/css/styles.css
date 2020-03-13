@@ -10,6 +10,10 @@ body {
   border: 3px solid rgb(81,29,217)
 }
 
+li {
+  text-align: start;
+}
+
 a {
   color: royalblue;
 }
@@ -40,16 +44,23 @@ form {
 }
 
 input {
-  background-color: rgb(205, 180, 205);
+  background-color: rgb(209,166,250);
   border-bottom: 2px solid royalblue;
   border-right: 2px solid royalblue;
+  border-left: none;
+  border-top: none;
   margin: 1px;
 }
 
 button {
-  background-color: thistle;
-  border: 3px solid royalblue;
+  background-color: rgb(219,176,260);
+  border: 2px solid royalblue;
   margin-bottom: 5px;
+}
+
+#show-form {
+  margin: 2% 0 0 0;
+  padding: 0;
 }
 
 div#footer {

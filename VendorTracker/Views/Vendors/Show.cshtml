@@ -3,15 +3,27 @@
   Layout = "_Layout";
 }
 
-<h3>Here are all the Orders this Vendor has.</h3>
+<h2>Here are all the Orders this Vendor has.</h2>
 
-<ol>
-@foreach (Order order in @Model["orders"])
-{
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
-}
-</ol>
+<div class="row">
+  <div class="form-group col-md-4">    
+    <p> </p>
+  </div>
+  <div class="form-group col-md-8">    
+    <ol>
+      @foreach (Order order in @Model["orders"])
+      {
+        <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+      }
+    </ol>
+  </div>
+</div>
 
-<h5>@Model["vendor"].Total</h5>
+
+
+<h4>Orders Total: $@Model["vendor"].Total</h4>
 
 <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new Order</a></p>
+<form action="/items/delete" method="post" id="show-form">
+  <button>Clear All Orders</button>
+</form>
