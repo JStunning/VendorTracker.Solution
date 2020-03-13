@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+@using VendorTracker.Models
+
+<h1>@Model["order"].Title</h1>
+<h3>Vendor: @Model["vendor"].Name</h3>
+
+<div class="footer">
+
+  <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another Orders</a>
+<a href='/vendors'>View all Vendors</a>
+  <a href='/vendors/@Model["vendor"].Id'>Return To Vendor View</a>
+</div>

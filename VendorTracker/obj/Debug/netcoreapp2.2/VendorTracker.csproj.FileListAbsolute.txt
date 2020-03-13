@@ -25,3 +25,6 @@ C:\Users\Stunning\Desktop\epicodusProjects\c#\VendorTracker.Solution\VendorTrack
 C:\Users\Stunning\Desktop\epicodusProjects\c#\VendorTracker.Solution\VendorTracker\obj\Debug\netcoreapp2.2\Razor\Views\Vendors\Index.g.cshtml.cs
 C:\Users\Stunning\Desktop\epicodusProjects\c#\VendorTracker.Solution\VendorTracker\obj\Debug\netcoreapp2.2\Razor\Views\Vendors\New.g.cshtml.cs
 C:\Users\Stunning\Desktop\epicodusProjects\c#\VendorTracker.Solution\VendorTracker\obj\Debug\netcoreapp2.2\Razor\Views\Vendors\Show.g.cshtml.cs
+C:\Users\Stunning\Desktop\epicodusProjects\c#\VendorTracker.Solution\VendorTracker\obj\Debug\netcoreapp2.2\Razor\Views\Orders\DeletAll.g.cshtml.cs
+C:\Users\Stunning\Desktop\epicodusProjects\c#\VendorTracker.Solution\VendorTracker\obj\Debug\netcoreapp2.2\Razor\Views\Orders\New.g.cshtml.cs
+C:\Users\Stunning\Desktop\epicodusProjects\c#\VendorTracker.Solution\VendorTracker\obj\Debug\netcoreapp2.2\Razor\Views\Orders\Show.g.cshtml.cs
