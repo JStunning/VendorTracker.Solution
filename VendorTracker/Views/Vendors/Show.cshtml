@@ -10,12 +10,12 @@
     <p> </p>
   </div>
   <div class="form-group col-md-8">    
-    <ol>
+    <ul>
       @foreach (Order order in @Model["orders"])
       {
         <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
       }
-    </ol>
+    </ul>
   </div>
 </div>
 
