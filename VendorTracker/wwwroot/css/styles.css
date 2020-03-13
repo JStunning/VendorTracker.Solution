@@ -1,0 +1,62 @@
+body {
+  background-color: royalblue;
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(219,176,260);
+  color: #333;
+  padding-bottom: 1%;
+}
+
+a {
+  color: royalblue;
+}
+
+form {
+  border: 3px solid rgb(81,29,217);
+  padding-top: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+#form-right {
+  margin-left: 7%;
+
+}
+
+#form-right label{
+  margin: 1%;
+  
+}
+
+#form-left {
+  margin-left: 0;
+}
+
+input {
+  background-color: rgb(205, 180, 205);
+  border-bottom: 2px solid royalblue;
+  border-right: 2px solid royalblue;
+  margin: 1px;
+}
+
+button {
+  background-color: thistle;
+  border: 3px solid royalblue;
+  margin-bottom: 5px;
+}
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#333;
+  background: rgb(219,176,260);
+  padding:8px;
+}

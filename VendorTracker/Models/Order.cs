@@ -18,9 +18,9 @@ namespace VendorTracker.Models
       Title = title;
       Description = description;
       Date = "Today";
-      Price = 0;
       _instances.Add(this);
       Id = _instances.Count;
+      Price = Id * 5;
     }
 
     public static List<Order> GetAll()
@@ -37,6 +37,5 @@ namespace VendorTracker.Models
     {
         return _instances[searchId - 1];
     }
-
   }
 }

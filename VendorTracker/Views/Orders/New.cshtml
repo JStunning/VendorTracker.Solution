@@ -3,18 +3,19 @@
 }
 <h1>Enter Order to Add to the @Model.Name</h1>
 <form action="/vendors/@Model.Id/orders" method="post">
-  <div class="form-group">
-    <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-    <input id="orderId" name="orderId" type="hidden" value="@Model.Orders">
-    <label for="orderTitle">Order Title</label>
-    <input id="orderTitle" name="orderTitle" type="text" required>
-    <label for="orderDescription">Order Description</label>
-    <input id="orderDescription" name="orderDescription" type="text" required>
+  <div class="row">
+    <div class="form-group col-md-5" id="form-right">
+      <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+      <input id="orderId" name="orderId" type="hidden" value="@Model.Orders">
+      <label for="orderTitle">Order Title:</label>
+      <label for="orderDescription">Order Description:</label>
+      <label for="orderDate">Order Date:</label>
+    </div>
+    <div class="form-group col-md-5" id="form-left">
+      <input id="orderTitle" name="orderTitle" type="text" required>
+      <input id="orderDescription" name="orderDescription" type="text" required>
+      <input id="orderDate" name="orderDate" type="text" required>
+    </div>
   </div>
   <button type="submit">Add</button>
 </form>
-
-<div class="footer">
-  <a href="/">Return to Home</a>
-  <a href="/vendors/@Model.Id/orders">View Orders</a>
-</div>

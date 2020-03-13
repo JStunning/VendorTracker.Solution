@@ -2,12 +2,15 @@
   Layout = "_Layout";
 }
 @using VendorTracker.Models
-
-<h2><u>Vendor</u></h2>
-<h3>@Model["vendor"].Name</h3>
-<h2><u>Order</u></h2>
-<h3>@Model["order"].Title</h3>
-<h3>@Model["order"].Description</h3>
+<form>
+  <h2><em><u>Vendor</u></em></h2>
+  <h4><strong>@Model["vendor"].Name</strong></h4>
+  <h2><em><u>Order</u></em></h2>
+  <h4><strong>@Model["order"].Title</strong></h4>
+  <p>@Model["order"].Description</p><br>
+  <p>Date: @Model["order"].Date</p>
+  <p>Price: $@Model["order"].Price</p>
+</form>
 
 
 <div class="footer">
