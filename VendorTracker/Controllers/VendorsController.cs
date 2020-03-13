@@ -22,9 +22,9 @@ namespace VendorTracker.Controllers
 
 
         [HttpPost("/vendors")]
-        public ActionResult Create(string vendorName)
+        public ActionResult Create(string vendorName, string VendorDescription)
         {
-            Vendor newVendor = new Vendor(vendorName);
+            Vendor newVendor = new Vendor(vendorName, VendorDescription);
             return RedirectToAction("Index");
         }
 
