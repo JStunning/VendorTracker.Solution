@@ -7,6 +7,7 @@ body {
   background-color: rgb(219,176,260);
   color: #333;
   padding-bottom: 1%;
+  border: 3px solid rgb(81,29,217)
 }
 
 a {
@@ -14,8 +15,8 @@ a {
 }
 
 form {
-  border: 3px solid rgb(81,29,217);
   padding-top: 5px;
+  margin-bottom: 5%;
 }
 
 .form-group {
@@ -54,9 +55,13 @@ button {
 div#footer {
   position:fixed;
   bottom:0px;
-  left:0px;
-  width:100%;
-  color:#333;
+  width:60%;
   background: rgb(219,176,260);
+  border: 3px solid rgb(81,29,217);
   padding:8px;
+  justify-content: center;
+}
+
+div#footer p {
+  margin: 0 3px;
 }

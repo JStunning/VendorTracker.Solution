@@ -20,7 +20,7 @@ namespace VendorTracker.Models
       Date = "Today";
       _instances.Add(this);
       Id = _instances.Count;
-      Price = Id * 5;
+      Price = 5;
     }
 
     public static List<Order> GetAll()
